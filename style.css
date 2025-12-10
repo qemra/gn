@@ -618,7 +618,7 @@ footer {
 }
 .settings-button {
     background: var(--gradient-primary);
-    color: white;
+    color: black;
     border: 0;
     padding: 0.875rem 1.5rem;
     font-size: 15px;
@@ -641,3 +641,4 @@ footer {
     transform: translateY(0);
     box-shadow: var(--shadow-sm);
 }
+
