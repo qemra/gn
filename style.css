@@ -1,6 +1,6 @@
 :root {
-    --primary: #ffffff;
-    --primary-hover: #f2f2f2;
+    --primary: #1e00a4;
+    --primary-hover: #1e00a4;
     --primary-light: rgba(255, 255, 255, 0.12);
     --primary-lighter: rgba(255, 255, 255, 0.06);
     --accent: #0b0b0b;
@@ -14,9 +14,9 @@
     --bg-secondary: #f8fafc;
     --surface: #ffffff;
     --surface-hover: #f1f5f9;
-    --border: #e2e8f0;
-    --border-light: #f1f5f9;
-    --glass: rgba(255, 255, 255, 0.85);
+    --border: #1e00a4;
+    --border-light: #1e00a4;
+    --glass: #1e00a4;
     --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
@@ -26,10 +26,14 @@
     --radius: 12px;
     --radius-sm: 8px;
     --radius-lg: 16px;
+
+
     --radius-xl: 20px;
-    --gradient-primary: linear-gradient(135deg, #ffffff 0%, #f6f6f7 50%, #f2f2f2 100%);
+
+    --gradient-primary: linear-gradient(135deg, #000000 0%, #404040 50%, #E6E6E6 100%);
     --gradient-accent: linear-gradient(135deg, #0b0b0b 0%, #1a1a1a 60%, #2b2b2b 100%);
-    --gradient-surface: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+
+    --gradient-surface: linear-gradient(135deg, #6b7280 0%, #9ca3af 50%, #d1d5db 100%);
 }
 
 .dark-mode {
@@ -56,10 +60,14 @@
     --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
     --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.6), 0 4px 6px -4px rgb(0 0 0 / 0.6);
     --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.7), 0 8px 10px -6px rgb(0 0 0 / 0.7);
+
     --shadow-glow: 0 0 20px rgba(255, 255, 255, 0.18);
-    --gradient-primary: linear-gradient(135deg, #ffffff 0%, #f2f2f2 100%);
+
+
+    --gradient-primary: linear-gradient(135deg, #000000 0%, #404040 50%, #E6E6E6 100%);
     --gradient-accent: linear-gradient(135deg, #000000 0%, #0f0f0f 70%, #1a1a1a 100%);
-    --gradient-surface: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+
+    --gradient-surface: linear-gradient(135deg, #4b5563 0%, #6b7280 50%, #9ca3af 100%);
 }
 
 * {
@@ -494,8 +502,9 @@ main {
     transform: translateY(-1px);
 }
 
+
 footer {
-    background: var(--bg-secondary);
+    background: var(--gradient-primary);
     border-top: 1px solid var(--border);
     padding: 1rem 1rem;
     text-align: center;
